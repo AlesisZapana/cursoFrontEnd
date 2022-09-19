@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carga</title>
+</head>
+
+<body>
+    <h1>Carga de producto</h1>
+    <form
+        style="border: ridge 0.5em;border-color: green;background-color: lightgreen; font-family: Arial, Helvetica, sans-serif; text-align: left; margin-left: 8em;margin-right: 8em;"
+        action="ficha.html">
+        <div style="font-family: Arial, Helvetica, sans-serif;border: dashed; margin-bottom: 3em;">
+            <label>Foto</label>
+            <input id="archivo" type="file" name="Archivo">
+        </div>
+        <div style="margin-bottom: 3em;">
+            <label> Nombre producto:</label>
+            <input type="text" name="nombre" id="nombre">
+        </div>
+        <div style="margin-bottom: 3em;">
+            <label>Precio:</label>
+            <input type="number" name="precio">
+        </div>
+        <div style="border: double 0.5em; margin-bottom: 3em;">
+            <label>Descripcion</label>
+            <textarea name="descripcion" id="desc-id" cols="30" rows="10"></textarea>
+        </div>
+        <div style="border:dotted 0.25em;border-color: green ; margin-bottom: 3em;">
+            <label>Tipo Producto</label>
+            <select name="tipo" id="tipo-id">
+                <option value="1">Comestible</option>
+                <option value="2">Limpieza</option>
+                <option value="3">Herramienta</option>
+                <option value="4">Deporte</option>
+
+            </select>
+        </div>
+        <div style="margin-bottom: 3em; border: ridge 0.25em; border-color: black;">
+            Características <br>
+            <label>Comida</label>
+            <input type="checkbox" name="comida" value="1">
+            <label>No comida</label>
+            <input type="checkbox" name="nocomida" value="2" id="">
+        </div>
+        <button type="submit">Cargar</button>
+    </form>
+</body>
+
+</html>

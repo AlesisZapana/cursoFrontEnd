@@ -1,0 +1,30 @@
+#galileo{
+    margin-left: 20em;
+    margin-right: 20em;
+    border: 3px solid;
+    padding-left: 2em;
+    padding-right: 2em;
+    background-color: #9a7546;
+}
+body{
+    background-color: rgba(218, 193, 178, 0.88);
+}
+h1,h2,h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+p
+{
+    
+    font-family: Verdana,Arial,sans-serif;
+    font-size: 15px;
+}
+label{
+    font-size: smaller;
+}
+img{
+    display: block;
+    margin: auto;
+}
+.imagen{
+    text-align: center;
+}

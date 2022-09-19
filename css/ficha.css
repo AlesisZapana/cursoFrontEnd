@@ -1,0 +1,34 @@
+h1,h2,p,li
+{
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #8FA3E3;
+    text-align: center;
+}
+.ficha{
+    margin-left: 25em;
+    margin-right: 25em;
+    border: solid;
+    background-color: #86D876;
+}
+.descripcion{
+    text-align: left;
+}
+.precio{
+    text-align: left;
+}
+.caracteristicas{
+    text-align: left;
+}
+.lista{
+    font-weight: 1000;
+    list-style-type: disc;
+}
+#foto{
+    border: solid 3px;
+}
+#titulo{
+    border-bottom: solid 3px;
+}
