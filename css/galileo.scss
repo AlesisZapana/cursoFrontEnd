@@ -1,0 +1,32 @@
+$fuente-titulo: Georgia, 'Times New Roman', Times, serif;
+$fuente-parrafo: Verdana,Arial,sans-serif;
+$margen: 20em;
+$padding: 2em;
+#galileo{
+    margin-left: $margen;
+    margin-right: $margen;
+    border: 3px solid;
+    padding-left: $padding;
+    padding-right: $padding;
+    background-color: #9a7546;
+}
+body{
+    background-color: rgba(218, 193, 178, 0.88);
+}
+h1,h2,h3{
+    font-family: $fuente-titulo;
+}
+p{   
+    font-family: $fuente-titulo;
+    font-size: 15px;
+}
+label{
+    font-size: smaller;
+}
+img{
+    display: block;
+    margin: auto;
+}
+.imagen{
+    text-align: center;
+}
