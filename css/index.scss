@@ -1,0 +1,72 @@
+//agregar mixin o estilo para los margenes flexbox
+%flexbox{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+%elemento-estilo{
+    text-align: center;
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0 ,.25);    
+    margin: 2rem;
+    border: 1px solid;
+}
+
+h1{
+    text-align: center
+}
+.container-prod{
+    @extend %flexbox;
+
+}
+.producto{
+    @extend %elemento-estilo;
+    
+    img{
+        width: 12rem;
+        height: 12rem;
+    }
+}
+
+.categorias{
+    @extend %flexbox;
+
+}
+
+.categoria{
+    @extend %elemento-estilo;
+    img{
+        width: 20rem;
+        height: 20rem;
+    }
+}
+
+.mensaje{
+    @extend %flexbox;
+
+}
+.campo{
+    // margin: 4rem;
+    padding: 1.5rem;
+    text-align: center;
+    input{
+        width: 100%;
+    }
+}
+
+.container-footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    text-align: center;
+}
+
+.elemento-footer{
+    text-align: center;
+}
+
+.copyright{
+    text-align: center;
+}
