@@ -120,7 +120,7 @@ h1 {
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 1rem 3rem;
+  padding: 1rem 1rem 0.8rem 1rem;
   position: fixed;
   top: 0;
   left: 0;
