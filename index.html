@@ -8,89 +8,103 @@
     <title>Supermercado</title>
 </head>
 <body>
-    <nav>
-        Super
-        <a href="index.html"></a> <a href="#promociones">Ofertas</a>  <a href="#productos">Productos</a> <a href="#contacto">Contacto</a>
-    </nav>
-    <header></header>
-    
-    <div id="promociones">
-        <h1>Nuestras promociones</h1>
-        <div class="container-prod">
-            <div class="producto">
-                <img src="img/sal.jpg" alt="">
-                <h2>Sal</h2>
-                <p>Precio: $500</p>
-                <button>Ver más</button>
+    <header class="header">
+        <nav id="navbar">
+            <h2>Supermercado</h2>
+            <ul>
+                <li class="navbar-item">
+                    <a href="#">Inicio</a> 
+                </li>
+                <li class="navbar-item">
+                    <a href="#promociones">Ofertas</a>  
+                </li>
+                <li class="navbar-item">
+                    <a href="#productos">Productos</a> 
+                </li>
+                <li class="navbar-item">
+                    <a href="#contacto">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div id="promociones">
+            <h1>Nuestras promociones</h1>
+            <div class="container-prod">
+                <div class="producto">
+                    <img src="img/sal.jpg" alt="">
+                    <h2>Sal</h2>
+                    <p>Precio: $500</p>
+                    <button>VER MÁS</button>
+                </div>
+                <div class="producto">
+                    <img src="img/azucar.jpg" alt="">
+                    <h2>Azucar</h2>
+                    <p>Precio: $500</p>
+                    <button>VER MÁS</button>
+                </div>
+                <div class="producto">
+                    <img src="img/Pelota.jpg" alt="">
+                    <h2>Pelota</h2>
+                    <p>Precio: $1000</p>
+                    <button>VER MÁS</button>
+                </div>
+                <div class="producto">
+                    <img src="img/palta.jpg" alt="">
+                    <h2>Palta</h2>
+                    <p>Precio: $800</p>
+                    <button>VER MÁS</button>
+                </div>
+                <div class="producto">
+                    <img src="img/tomate.jpg" alt="">
+                    <h2>Tomate</h2>
+                    <p>Precio: $700</p>
+                    <button>VER MÁS</button>
+                </div>
             </div>
-            <div class="producto">
-                <img src="img/azucar.jpg" alt="">
-                <h2>Azucar</h2>
-                <p>Precio: $500</p>
-                <button>Ver más</button>
-            </div>
-            <div class="producto">
-                <img src="img/Pelota.jpg" alt="">
-                <h2>Pelota</h2>
-                <p>Precio: $1000</p>
-                <button>Ver más</button>
-            </div>
-            <div class="producto">
-                <img src="img/palta.jpg" alt="">
-                <h2>Palta</h2>
-                <p>Precio: $800</p>
-                <button>Ver más</button>
-            </div>
-            <div class="producto">
-                <img src="img/tomate.jpg" alt="">
-                <h2>Tomate</h2>
-                <p>Precio: $700</p>
-                <button>Ver más</button>
+
+        </div>
+        <div id="productos" >
+            <h1>Nuestros productos</h1>
+            <div class="categorias">
+                <div class="categoria">
+                    <img src="img/tools.png" alt="">
+                    <h2>Herramientas</h2>
+                    <button>VER TODOS</button>
+                </div>
+                <div class="categoria">
+                    <img src="img/sports.png" alt="">
+                    <h2>Deportes</h2>
+                    <button>VER TODOS</button>
+                </div>
+                <div class="categoria">
+                    <img src="img/grocery.png" alt="">
+                    <h2>Comestibles</h2>
+                    <button>VER TODOS</button>
+                </div>
             </div>
         </div>
-
-    </div>
-
-    <div id="productos" >
-        <h1>Nuestros productos</h1>
-        <div class="categorias">
-            <div class="categoria">
-                <img src="img/tools.png" alt="">
-                <h2>Herramientas</h2>
-                <button>VER TODOS</button>
+        <div id="contacto">
+            <h1>Contactanos</h1>
+            <div class="mensaje">
+                <form>
+                    <div class="campo">
+                        <input placeholder="NOMBRE" name="nombre" type="text"/>
+                    </div>
+                    <div class="campo">
+                        <input placeholder="APELLIDO" name="apellido" type="text"/>
+                    </div>
+                    <div class="campo">
+                        <input placeholder="EMAIL" name="email" type="email"/>
+                    </div>
+                    <div class="campo">
+                        <textarea placeholder="COMENTARIO" name="descripcion" id="desc-id" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="campo">
+                        <button type="submit">Enviar</button>
+                    </div>
+                </form>
             </div>
-            <div class="categoria">
-                <img src="img/sports.png" alt="">
-                <h2>Deportes</h2>
-                <button>VER TODOS</button>
-            </div>
-            <div class="categoria">
-                <img src="img/grocery.png" alt="">
-                <h2>Comestibles</h2>
-                <button>VER TODOS</button>
-            </div>
-        </div>
-    </div>
-    <div id="contacto">
-        <h1>Contactannos</h1>
-        <div class="mensaje">
-            <form>
-                <div class="campo">
-                    <input placeholder="NOMBRE" name="nombre" type="text"/>
-                </div>
-                <div class="campo">
-                    <input placeholder="APELLIDO" name="apellido" type="text"/>
-                </div>
-                <div class="campo">
-                    <input placeholder="EMAIL" name="email" type="email"/>
-                </div>
-                <div class="campo">
-                    <textarea placeholder="COMENTARIO" name="descripcion" id="desc-id" cols="30" rows="10"></textarea>
-                </div>
-                <div class="campo">
-                    <button type="submit">Enviar</button>
-                </div>
-            </form>
         </div>
     </div>
     <footer>

@@ -10,20 +10,65 @@
   box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.25);
   margin: 2rem;
   border: 1px solid;
+  background-color: hsl(0deg, 9%, 84%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: -webkit-linear-gradient(right, hsl(75deg, 50%, 50%), hsl(25deg, 50%, 50%));
 }
 
 h1 {
   text-align: center;
+  font-family: "Roboto";
+  font-weight: bolder;
+  font-style: normal;
 }
 
+.container-prod {
+  background: -webkit-linear-gradient(right, hsl(25deg, 50%, 50%), hsl(75deg, 50%, 50%));
+}
+
+.producto {
+  font-family: "Roboto";
+  font-weight: smaller;
+  font-style: normal;
+}
 .producto img {
-  width: 12rem;
-  height: 12rem;
+  margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+  width: 10rem;
+  height: 10rem;
+}
+.producto button {
+  font-family: inherit;
+  font-weight: bolder;
+  font-style: normal;
+  font-size: 1em;
 }
 
+.categoria {
+  font-family: "Roboto";
+  font-weight: smaller;
+  font-style: normal;
+}
 .categoria img {
   width: 20rem;
   height: 20rem;
+}
+.categoria button {
+  font-family: inherit;
+  font-weight: bolder;
+  font-style: normal;
+  font-size: 1em;
+}
+
+.mensaje form {
+  border: 1px solid;
+  background-color: hsl(0deg, 9%, 84%);
 }
 
 .campo {
@@ -32,6 +77,19 @@ h1 {
 }
 .campo input {
   width: 100%;
+  font-family: "sans-serif";
+  font-weight: bolder;
+  font-style: normal;
+}
+.campo textarea {
+  font-family: "sans-serif";
+  font-weight: bolder;
+  font-style: normal;
+}
+.campo button {
+  font-family: "sans-serif";
+  font-weight: bolder;
+  font-style: normal;
 }
 
 .container-footer {
@@ -49,6 +107,41 @@ h1 {
 
 .copyright {
   text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgb(64, 128, 128);
+  font-family: Helvetica;
+  font-weight: bold;
+  font-style: normal;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+}
+nav .navbar-item {
+  padding-left: 1rem;
+}
+nav a {
+  text-decoration: none;
+  color: rgb(227, 227, 227);
+}
+
+.container {
+  margin-top: 4rem;
+}
+
+.container-footer {
+  font-family: "Helvetica";
+  font-weight: smaller;
+  font-style: normal;
 }
 
 /*# sourceMappingURL=index.css.map */

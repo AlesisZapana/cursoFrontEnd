@@ -1,4 +1,16 @@
-//agregar mixin o estilo para los margenes flexbox
+$color_navbar: rgb(64, 50%, 50%);
+$color_primario:hsl(75, 50%, 50%);
+$color_secundario: hsl(25, 50%, 50%);
+$color_elemento: hsl(0, 9%, 84%);
+@mixin tema($color1: $color_primario,$color2:$color_secundario) {
+    background: -webkit-linear-gradient(right,$color1,$color2);
+}
+
+@mixin fuente($fuente:Arial,$peso:normal,$estilo:normal){
+    font-family: $fuente;
+    font-weight: $peso;
+    font-style: $estilo;
+}
 %flexbox{
     display: flex;
     flex-wrap: wrap;
@@ -10,21 +22,36 @@
     box-shadow: 5px 5px 5px 5px rgba(0,0,0 ,.25);    
     margin: 2rem;
     border: 1px solid;
+    background-color: $color_elemento;
 }
 
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    @include tema($color_primario,$color_secundario);
+}
 h1{
-    text-align: center
+    text-align: center;
+    // font-family: Roboto;
+    @include fuente('Roboto',bolder,normal);
 }
 .container-prod{
     @extend %flexbox;
-
+    @include tema($color_secundario,$color_primario);
 }
 .producto{
     @extend %elemento-estilo;
-    
+    @include fuente('Roboto', smaller, normal);
     img{
-        width: 12rem;
-        height: 12rem;
+        margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+        width: 10rem;
+        height: 10rem;
+    }
+    button{
+        @include fuente(inherit, bolder, normal);
+        font-size: 1em;
     }
 }
 
@@ -35,15 +62,23 @@ h1{
 
 .categoria{
     @extend %elemento-estilo;
+    @include fuente('Roboto', smaller, normal);
     img{
         width: 20rem;
         height: 20rem;
+    }
+    button{
+        @include fuente(inherit, bolder, normal);
+        font-size: 1em;
     }
 }
 
 .mensaje{
     @extend %flexbox;
-
+    form{
+        border: 1px solid;
+        background-color: $color_elemento;
+    }
 }
 .campo{
     // margin: 4rem;
@@ -51,6 +86,13 @@ h1{
     text-align: center;
     input{
         width: 100%;
+        @include fuente('sans-serif', bolder, normal);
+    }
+    textarea{
+        @include fuente('sans-serif', bolder, normal);
+    }
+    button{
+        @include fuente('sans-serif', bolder, normal);
     }
 }
 
@@ -69,4 +111,31 @@ h1{
 
 .copyright{
     text-align: center;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: $color_navbar;
+    @include fuente(Helvetica, bold, normal);
+    ul{
+        display: flex;
+        list-style: none;
+    }
+    .navbar-item{
+        padding-left: 1rem;
+    }
+    a{
+        text-decoration: none;
+        color: rgb(227, 227, 227);
+    }
+}
+
+.container{
+    margin-top: 4rem ;
+}
+.container-footer{
+    @include fuente('Helvetica', smaller, normal)
 }
