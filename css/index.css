@@ -103,6 +103,14 @@ h1 {
 
 .elemento-footer {
   text-align: center;
+  color: rgb(227, 227, 227);
+  font-family: Helvetica;
+  font-weight: bold;
+  font-style: normal;
+}
+.elemento-footer a {
+  color: rgb(227, 227, 227);
+  text-decoration: none;
 }
 
 .copyright {
@@ -112,7 +120,7 @@ h1 {
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 1rem 2rem;
+  padding: 1rem 3rem;
   position: fixed;
   top: 0;
   left: 0;
@@ -133,15 +141,27 @@ nav a {
   text-decoration: none;
   color: rgb(227, 227, 227);
 }
+nav img {
+  width: 2rem;
+  height: 2rem;
+}
 
 .container {
-  margin-top: 4rem;
+  margin-top: 5rem;
 }
 
 .container-footer {
   font-family: "Helvetica";
   font-weight: smaller;
   font-style: normal;
+}
+
+footer {
+  background: -webkit-linear-gradient(right, hsl(180deg, 40%, 50%), hsl(130deg, 40%, 50%));
+}
+footer p {
+  background-color: hsl(217deg, 56%, 30%);
+  color: white;
 }
 
 /*# sourceMappingURL=index.css.map */

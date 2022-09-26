@@ -107,6 +107,12 @@ h1{
 
 .elemento-footer{
     text-align: center;
+    color: rgb(227, 227, 227);
+    @include fuente(Helvetica, bold, normal);
+    a{
+        color: rgb(227, 227, 227);
+        text-decoration: none;
+    }
 }
 
 .copyright{
@@ -115,7 +121,7 @@ h1{
 nav{
     display: flex;
     justify-content: space-between;
-    padding: 1rem 2rem;
+    padding: 1rem 3rem;
     position: fixed;
     top: 0; left: 0; right: 0;
     background: $color_navbar;
@@ -131,11 +137,22 @@ nav{
         text-decoration: none;
         color: rgb(227, 227, 227);
     }
+    img{
+        width: 2rem;
+        height: 2rem;
+    }
 }
 
 .container{
-    margin-top: 4rem ;
+    margin-top: 5rem ;
 }
 .container-footer{
     @include fuente('Helvetica', smaller, normal)
+}
+footer{
+    @include tema(hsl(180, 40%, 50%), hsl(130, 40%, 50%));
+    p{
+        background-color: hsl(217, 56%, 30%);
+        color: white;
+    }
 }
