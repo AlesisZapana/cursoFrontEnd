@@ -1,8 +1,9 @@
 {
   "dependencies": {
+    "bootstrap": "^5.2.1",
     "sass": "^1.55.0"
   },
   "scripts": {
-    "sass":"sass --watch css"
+    "sass": "sass --watch css"
   }
 }

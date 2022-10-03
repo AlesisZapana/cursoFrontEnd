@@ -4,129 +4,157 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index.css">
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>Supermercado</title>
 </head>
-<body>
-    <header class="header">
-        <nav id="navbar">
-            <a href="#"><img src="img/cart.png" alt="La primera"></a>
-            <ul>
-                <li class="navbar-item">
-                    <a href="#">Inicio</a> 
-                </li>
-                <li class="navbar-item">
-                    <a href="#promociones">Ofertas</a>  
-                </li>
-                <li class="navbar-item">
-                    <a href="#productos">Productos</a> 
-                </li>
-                <li class="navbar-item">
-                    <a href="#contacto">Contacto</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+<body class="bg-success bg-opacity-50">
+    <div class="container-fluid">
+        <div class="row" style="height: 3rem; background-color: rgb(64, 128, 128);">
+            <div class="col-md-8 col-sm-2 col-2"><a href="#"><img src="img/cart.png" class="img-fluid" alt="La primera" width="40rem" class="d-inline-block align-text-top"></a></div>
+            <div class="col-md-1 col-sm-2 col-2 align-self-center d-flex justify-content-end"> <a href="#" class="nav-link" style="color: white;">Inicio</a> </div> 
+            <div class="col-md-1 col-sm-2 col-2 align-self-center d-flex justify-content-end"> <a href="#promociones" class="nav-link" style="color: white;">Ofertas</a></div> 
+            <div class="col-md-1 col-sm-2 col-2 align-self-center d-flex justify-content-end"> <a href="#productos" class="nav-link" style="color: white;">Productos</a></div> 
+            <div class="col-md-1 col-sm-2 col-2 align-self-center d-flex justify-content-end"> <a href="#contacto" class="nav-link" style="color: white;">Contacto</a></div>
+        </div>
+    </div>
+    
     <div class="container">
-        <div id="promociones">
-            <h1>Nuestras promociones</h1>
-            <div class="container-prod">
-                <div class="producto">
-                    <img src="img/sal.jpg" alt="">
-                    <h2>Sal</h2>
-                    <p>Precio: $500</p>
-                    <a href="ficha.html"><button>VER MÁS</button></a>
-                </div>
-                <div class="producto">
-                    <img src="img/azucar.jpg" alt="">
-                    <h2>Azucar</h2>
-                    <p>Precio: $500</p>
-                    <a href="ficha.html"><button>VER MÁS</button></a>
-                </div>
-                <div class="producto">
-                    <img src="img/Pelota.jpg" alt="">
-                    <h2>Pelota</h2>
-                    <p>Precio: $1000</p>
-                    <a href="ficha.html"><button>VER MÁS</button></a>
-                </div>
-                <div class="producto">
-                    <img src="img/palta.jpg" alt="">
-                    <h2>Palta</h2>
-                    <p>Precio: $800</p>
-                    <a href="ficha.html"><button>VER MÁS</button></a>
-                </div>
-                <div class="producto">
-                    <img src="img/tomate.jpg" alt="">
-                    <h2>Tomate</h2>
-                    <p>Precio: $700</p>
-                    <a href="ficha.html"><button>VER MÁS</button></a>
+        <h1 class="text-center">Nuestras promociones</h1>
+        <div class="justify-content-md-center row  row-cols-xs-1 row-cols-md-3 row-cols-lg-5">
+            <div class="col">
+                <div class="card text-center mx-auto" style="width: 13rem;">
+                    <img src="img/sal.jpg" class="card-img-top mx-auto" style="width: 12rem; height: 12rem;" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Sal</h5>
+                        <p>Precio: $500</p>
+                        <a href="ficha.html"><button class="btn btn-primary">VER MÁS</button></a>
+                    </div>
                 </div>
             </div>
-
-        </div>
-        <div id="productos" >
-            <h1>Nuestros productos</h1>
-            <div class="categorias">
-                <div class="categoria">
-                    <img src="img/tools.png" alt="">
-                    <h2>Herramientas</h2>
-                    <a href="lista.html"><button>VER TODOS</button></a>
-                </div>
-                <div class="categoria">
-                    <img src="img/sports.png" alt="">
-                    <h2>Deportes</h2>
-                    <a href="lista.html"><button>VER TODOS</button></a>
-                </div>
-                <div class="categoria">
-                    <img src="img/grocery.png" alt="">
-                    <h2>Comestibles</h2>
-                    <a href="lista.html"><button>VER TODOS</button></a>
+            <div class="col">
+                <div class="card text-center mx-auto" style="width: 13rem;">
+                    <img src="img/azucar.jpg" class="card-img-top mx-auto" style="width: 12rem; height: 12rem;" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Azucar</h5>
+                        <p>Precio: $500</p>
+                        <a href="ficha.html"><button class="btn btn-primary">VER MÁS</button></a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div id="contacto">
-            <h1>Contactanos</h1>
-            <div class="mensaje">
-                <form>
-                    <div class="campo">
-                        <input placeholder="NOMBRE" name="nombre" type="text"/>
+            <div class="col">
+                <div class="card text-center mx-auto" style="width: 13rem;">
+                    <img src="img/Pelota.jpg" class="card-img-top mx-auto" style="width: 12rem; height: 12rem;" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Pelota</h5>
+                        <p>Precio: $1000</p>
+                        <a href="ficha.html"><button class="btn btn-primary">VER MÁS</button></a>
                     </div>
-                    <div class="campo">
-                        <input placeholder="APELLIDO" name="apellido" type="text"/>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card text-center mx-auto" style="width: 13rem;">
+                    <img src="img/palta.jpg" class="card-img-top mx-auto" style="width: 12rem; height: 12rem;" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Palta</h5>
+                        <p>Precio: $800</p>
+                        <a href="ficha.html"><button class="btn btn-primary">VER MÁS</button></a>
                     </div>
-                    <div class="campo">
-                        <input placeholder="EMAIL" name="email" type="email"/>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card text-center mx-auto" style="width: 13rem;">
+                    <img src="img/tomate.jpg" class="card-img-top mx-auto" style="width: 12rem; height: 12rem;" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Tomate</h5>
+                        <p>Precio: $700</p>
+                        <a href="ficha.html"><button class="btn btn-primary">VER MÁS</button></a>
                     </div>
-                    <div class="campo">
-                        <textarea placeholder="COMENTARIO" name="descripcion" id="desc-id" cols="30" rows="10"></textarea>
-                    </div>
-                    <div class="campo">
-                        <button type="submit">Enviar</button>
-                    </div>
-                </form>
+                </div>
             </div>
         </div>
     </div>
-    <footer>
-        <div class="container-footer">
+    <div class="container">
+        <h1 class="text-center">Nuestros productos</h1>
+        <div class="text-center justify-content-md-center row row-cols-xs-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3">
 
-            <div class="elemento-footer">
-                Correo: <a href="mailto:ale9410@gmail.com">ale9410 @gmail.com</a>
+            <div class="col">
+                <div class="card mx-auto" style="width: 20rem;">
+                    <img src="img/tools.png" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h2 class="card-title">Herramientas</h2>
+                        <a href="lista.html"><button class="btn btn-primary">VER TODOS</button></a>
+                    </div>
+                </div>
             </div>
-            <div class="elemento-footer">
-                Dirección: <address>Facundo Quiroga 1257</address>
+            <div class="col">
+                <div class="card mx-auto" style="width: 20rem;">
+                    <img src="img/sports.png" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h2 class="card-title">Deportes</h2>
+                        <a href="lista.html"><button class="btn btn-primary">VER TODOS</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mx-auto" style="width: 20rem;">
+                    <img src="img/grocery.png" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h2 class="card-title">Comestibles</h2>
+                        <a href="lista.html"><button class="btn btn-primary">VER TODOS</button></a>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="container-footer">
-            <div class="elemento-footer">
-                Teléfono: <a href="tel:+542901486396">(+54) 2901 486396</a>
-            </div>
-            <div class="elemento-footer">
-                Localidad: Ushuaia
+        <div class="container">
+            <h1 class="text-center">Contactanos</h1>
+            <form class="container text-center">
+                <div class="col-lg-8 offset-lg-2 mb-3 form-floating">
+                    <input type="text" class="form-control" id="nombreFlotante" placeholder="Nombre" required>
+                    <label for="nombreFlotante">NOMBRE</label>
+                </div>
+                <div class="col-lg-8 offset-lg-2 mb-3 form-floating">
+                    <input type="text" class="form-control" id="apellidoFlotante" placeholder="Apellido" required>
+                    <label for="apellidoFlotante">APELLIDO</label>
+                </div>
+                <div class="col-lg-8 offset-lg-2 mb-3 form-floating">
+                    <input type="email" class="form-control" id="emailFlotante" placeholder="name@example.com" required>
+                    <label for="emailFlotante">EMAIL</label>
+                </div>
+                <div class="col-lg-8 offset-lg-2 mb-3 form-floating">
+                    <textarea class="form-control" placeholder="Dejá un comentario" id="textareaFlotante" style="height: 10rem"></textarea>
+                    <label for="textareaFlotante">COMENTARIO</label>
+                </div>
+                <div class="col-lg-8 offset-lg-2 mb-3 form-floating text-center">
+                    <button class="btn btn-primary" type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer class="bg-success bg-opacity-75">
+
+        <div class="container">
+            <div class="row">
+                <div class="col d-flex justify-content-start">
+                    Correo: <a href="mailto:ale9410@gmail.com">ale9410 @gmail.com</a>
+                </div>
+                <div class="col d-flex justify-content-end">
+                    Dirección: <address>Facundo Quiroga 1257</address>
+                </div>
             </div>
         </div>
-
-        <p class="copyright">&copy; 2022</p>
+        <div class="container">
+            <div class="row">
+                <div class="col d-flex justify-content-start">
+                    Teléfono: <a href="tel:+542901486396">(+54) 2901 486396</a>
+                </div>
+                <div class="col d-flex justify-content-end">
+                    Localidad: Ushuaia
+                </div>
+            </div>
+        </div>
+        
+        <p class="copyright text-center">&copy; 2022</p>
     </footer>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
