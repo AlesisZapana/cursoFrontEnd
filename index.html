@@ -7,128 +7,156 @@
     <!-- <link rel="stylesheet" href="css/index.css"> -->
     <link href="dist/output.css" rel="stylesheet">
     <title>Supermercado</title>
+    <script>
+    function toggleNavbar(collapseID){
+        document.getElementById(collapseID).classList.toggle("hidden");
+        document.getElementById(collapseID).classList.toggle("flex");
+    }
+    </script>
 </head>
-<body>
+<body class="bg-gradient-to-b from-slate-400 to-slate-600">
+    <nav class="sticky top-0 bg-gradient-to-b from-gray-700 to-gray-800">
+        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div class="relative flex h-16 items-center justify-between">
+            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                <button type="button" class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false" onclick="toggleNavbar('mobile-menu')">
+                    <span class="sr-only">Abrir Menú principal</span>
+                    <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                    <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                  </button>
+            </div>
+            <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+              <div class="flex flex-shrink-0 items-center">
+                <img class="block h-8 w-auto lg:hidden" src="img/cart.png" alt="La compañía">
+                <img class="hidden h-8 w-auto lg:block" src="img/cart.png" alt="La compañía">
+              </div>
+              <div class="hidden sm:ml-6 sm:block">
+                <div class="flex space-x-4">
+                  <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white active:bg-gray-900 px-3 py-2 rounded-md text-sm font-medium" aria-current="page">Inicio</a>
+                  <a href="#promociones" class="text-gray-300 hover:bg-gray-700 hover:text-white active:bg-gray-900 px-3 py-2 rounded-md text-sm font-medium">Ofertas</a>
+                  <a href="#productos" class="text-gray-300 hover:bg-gray-700 hover:text-white active:bg-gray-900 px-3 py-2 rounded-md text-sm font-medium">Producto</a>
+                  <a href="#contacto" class="text-gray-300 hover:bg-gray-700 hover:text-white active:bg-gray-900 px-3 py-2 rounded-md text-sm font-medium">Contacto</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Mobile -->
+        <div class="hidden sm:hidden" id="mobile-menu">
+          <div class="space-y-1 px-2 pt-2 pb-3 w-full">
+            <a href="#" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Inicio</a>
+            <a href="#promociones" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Ofertas</a>
+            <a href="#productos" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Producto</a>
+            <a href="#contacto" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contacto</a>
+          </div>
+        </div>
+    </nav>
 
-    <header class="header">
-        <nav id="navbar">
-            <a href="#"><img src="img/cart.png" alt="La primera"></a>
-            <ul>
-                <li class="navbar-item">
-                    <a href="#">Inicio</a> 
-                </li>
-                <li class="navbar-item">
-                    <a href="#promociones">Ofertas</a>  
-                </li>
-                <li class="navbar-item">
-                    <a href="#productos">Productos</a> 
-                </li>
-                <li class="navbar-item">
-                    <a href="#contacto">Contacto</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <div class="container">
+    <div class="container mx-auto">
         <div id="promociones">
-            <h1>Nuestras promociones</h1>
-            <div class="container-prod">
-                <div class="producto">
-                    <img src="img/sal.jpg" alt="">
-                    <h2>Sal</h2>
-                    <p>Precio: $500</p>
-                    <a href="ficha.html"><button>VER MÁS</button></a>
-                </div>
-                <div class="producto">
-                    <img src="img/azucar.jpg" alt="">
-                    <h2>Azucar</h2>
-                    <p>Precio: $500</p>
-                    <a href="ficha.html"><button>VER MÁS</button></a>
-                </div>
-                <div class="producto">
-                    <img src="img/Pelota.jpg" alt="">
-                    <h2>Pelota</h2>
-                    <p>Precio: $1000</p>
-                    <a href="ficha.html"><button>VER MÁS</button></a>
-                </div>
-                <div class="producto">
-                    <img src="img/palta.jpg" alt="">
-                    <h2>Palta</h2>
-                    <p>Precio: $800</p>
-                    <a href="ficha.html"><button>VER MÁS</button></a>
-                </div>
-                <div class="producto">
-                    <img src="img/tomate.jpg" alt="">
-                    <h2>Tomate</h2>
-                    <p>Precio: $700</p>
-                    <a href="ficha.html"><button>VER MÁS</button></a>
-                </div>
+            <h1 class="text-6xl font-bold text-center">Nuestras promociones</h1>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 container">
+                    <div class="producto row-span-4 bg-orange-300 border-2 border-orange-800 mx-auto hover:bg-orange-800 transition duration-300 shadow-lg">
+                        <img class="w-52 h-52" src="img/sal.jpg" alt="">
+                        <h2 class="text-center">Sal</h2>
+                        <p class="text-center oldstyle-nums">Precio: $500</p>
+                        <p class="text-center"><a href="ficha.html">VER MÁS</a></p>
+                    </div>
+                    <div class="producto row-span-4 bg-orange-300 border-2 border-orange-800 mx-auto hover:bg-orange-800 transition duration-300 shadow-lg">
+                        <img class="w-52 h-52" src="img/azucar.jpg" alt="">
+                        <h2 class="text-center">Azucar</h2> 
+                        <p class="text-center oldstyle-nums">Precio: $500</p>
+                        <p class="text-center"><a href="ficha.html">VER MÁS</a></p>
+                    </div>
+                    <div class="producto row-span-4 bg-orange-300 border-2 border-orange-800 mx-auto hover:bg-orange-800 transition duration-300 shadow-lg">
+                        <img class="w-52 h-52" src="img/Pelota.jpg" alt="">
+                        <h2 class="text-center">Pelota</h2>
+                        <p class="text-center oldstyle-nums">Precio: $1000</p>
+                        <p class="text-center"><a href="ficha.html">VER MÁS</a></p>
+                    </div>
+                    <div class="producto row-span-4 bg-orange-300 border-2 border-orange-800 mx-auto hover:bg-orange-800 transition duration-300 shadow-lg">
+                        <img class="w-52 h-52" src="img/palta.jpg" alt="">
+                        <h2 class="text-center">Palta</h2>
+                        <p class="text-center oldstyle-nums">Precio: $800</p>
+                        <p class="text-center"><a href="ficha.html">VER MÁS</a></p>
+                    </div>
+                    <div class="producto row-span-4 bg-orange-300 border-2 border-orange-800 mx-auto hover:bg-orange-800 transition duration-300 shadow-lg">
+                        <img class="w-52 h-52" src="img/tomate.jpg" alt="">
+                        <h2 class="text-center">Tomate</h2>
+                        <p class="text-center oldstyle-nums">Precio: $700</p>
+                        <a href="ficha.html">VER MÁS</a>
+                    </div>
             </div>
 
         </div>
         <div id="productos" >
-            <h1>Nuestros productos</h1>
-            <div class="categorias">
-                <div class="categoria">
+            <h1 class="text-6xl font-bold text-center">Nuestros productos</h1>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="categoria border-2 border-orange-800 bg-orange-300 hover:bg-orange-800 transition duration-300 shadow-lg">
                     <img src="img/tools.png" alt="">
-                    <h2>Herramientas</h2>
+                    <h2 class="text-center">Herramientas</h2>
                     <a href="lista.html"><button>VER TODOS</button></a>
                 </div>
-                <div class="categoria">
+                <div class="categoria border-2 border-orange-800 bg-orange-300 hover:bg-orange-800 transition duration-300 shadow-lg">
                     <img src="img/sports.png" alt="">
-                    <h2>Deportes</h2>
+                    <h2 class="text-center">Deportes</h2>
                     <a href="lista.html"><button>VER TODOS</button></a>
                 </div>
-                <div class="categoria">
+                <div class="categoria border-2 border-orange-800 bg-orange-300 hover:bg-orange-800 transition duration-300 shadow-lg">
                     <img src="img/grocery.png" alt="">
-                    <h2>Comestibles</h2>
+                    <h2 class="text-center">Comestibles</h2>
                     <a href="lista.html"><button>VER TODOS</button></a>
                 </div>
             </div>
         </div>
         <div id="contacto">
-            <h1>Contactanos</h1>
+            <h1 class="text-6xl font-bold text-center">Contactanos</h1>
             <div class="mensaje">
                 <form>
-                    <div class="campo">
-                        <input placeholder="NOMBRE" name="nombre" type="text"/>
+                    <div class="campo px-5 lg:px-40 py-2">
+                        <input class="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-3 pl-15 pr-13 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" placeholder="NOMBRE" name="nombre" type="text"/>
                     </div>
-                    <div class="campo">
-                        <input placeholder="APELLIDO" name="apellido" type="text"/>
+                    <div class="campo px-5 lg:px-40 py-2">
+                        <input class="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-3 pl-15 pr-13 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" placeholder="APELLIDO" name="apellido" type="text"/>
                     </div>
-                    <div class="campo">
-                        <input placeholder="EMAIL" name="email" type="email"/>
+                    <div class="campo px-5 lg:px-40 py-2">
+                        <input class="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-3 pl-15 pr-13 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" placeholder="EMAIL" name="email" type="email"/>
                     </div>
-                    <div class="campo">
-                        <textarea placeholder="COMENTARIO" name="descripcion" id="desc-id" cols="30" rows="10"></textarea>
+                    <div class="campo px-5 lg:px-40 py-2">
+                        <textarea class="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-3 pl-15 pr-13 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" placeholder="COMENTARIO" name="descripcion" id="desc-id" cols="30" rows="10"></textarea>
                     </div>
-                    <div class="campo">
-                        <button type="submit">Enviar</button>
+                    <div class="campo text-center">
+                        <button class="transition ease-in-out bg-amber-500 hover:-translate-y-1 hover:scale-110 hover:bg-orange-600 duration-300 w-20 h-8 rounded" type="submit">Enviar</button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
-    <footer>
-        <div class="container-footer">
-
-            <div class="elemento-footer">
-                Correo: <a href="mailto:ale9410@gmail.com">ale9410 @gmail.com</a>
+    <div class="bg-gradient-to-r from-orange-600 to-orange-700">
+        <div class="container mx-auto">
+            <div class="flex flex-col text-center md:flex-row md:justify-between">
+                <div class="elemento-footer text-white font-bold">
+                    Correo: <a href="mailto:ale9410@gmail.com">ale9410 @gmail.com</a>
+                </div>
+                <div class="elemento-footer text-white font-bold">
+                    Dirección: <address>Facundo Quiroga 1257</address>
+                </div>
             </div>
-            <div class="elemento-footer">
-                Dirección: <address>Facundo Quiroga 1257</address>
+            <div class="flex flex-col text-center md:flex-row md:justify-between">
+                <div class="elemento-footer text-white font-bold">
+                    Teléfono: <a href="tel:+542901486396">(+54) 2901 486396</a>
+                </div>
+                <div class="elemento-footer text-white font-bold">
+                    Localidad: Ushuaia
+                </div>
             </div>
         </div>
-        <div class="container-footer">
-            <div class="elemento-footer">
-                Teléfono: <a href="tel:+542901486396">(+54) 2901 486396</a>
-            </div>
-            <div class="elemento-footer">
-                Localidad: Ushuaia
-            </div>
-        </div>
-
-        <p class="copyright">&copy; 2022</p>
-    </footer>
+    </div>
+        <p class="copyright text-cyan-100 text-center bg-gradient-to-b from-orange-600 to-orange-800">&copy; 2022</p>
 </body>
 </html>
